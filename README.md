@@ -16,5 +16,5 @@ ELK是三个开源软件的缩写，分别表示：Elasticsearch , Logstash, Kib
    
    
 一、Elasticsearch学习：
-elasticsearch中文社区：
-https://elasticsearch.cn/
+官网下载地址：https://www.elastic.co/cn/downloads/elasticsearch
+配置信息：https://www.elastic.co/guide/cn/elasticsearch/guide/current/important-configuration-changes.html
