@@ -16,5 +16,13 @@ ELK是三个开源软件的缩写，分别表示：Elasticsearch , Logstash, Kib
    
    
 一、Elasticsearch学习：
+
 官网下载地址：https://www.elastic.co/cn/downloads/elasticsearch
+
 配置信息：https://www.elastic.co/guide/cn/elasticsearch/guide/current/important-configuration-changes.html
+
+Elasticsearch 默认启动的集群名字叫 elasticsearch 。改名字的目的是防止某人的笔记本电脑加入了集群这种意外。
+elasticsearch.yml 文件中修改：cluster.name: elasticsearch_test
+
+节点名字是在启动的时候产生的，如果不定义每次启动节点，它都会得到一个新的名字。这会使日志变得很混乱，因为所有节点的名称都是不断变化的。
+建议给每个节点设置一个有意义的、清楚的、描述性的名字，同样在 elasticsearch.yml 中配置：node.name: elasticsearch_001_data
